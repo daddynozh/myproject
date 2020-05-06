@@ -1,0 +1,184 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+/** отцентрирование **/
+
+.container {
+	margin: 0 auto;
+	width: 900px;
+}
+
+/** ПАРТФОЛИО **/
+
+#headpart
+{
+color:black;
+}
+.my-part {
+	padding: 20px;
+	border: 1px solid black;
+	background-color: antiquewhite;
+	font-size: 18px;
+	line-height: 40px;
+    color: #FFF;
+    background: url(img/head.png);
+    
+}
+
+nav {
+	
+	background-color: azure;
+	text-decoration-color: black;
+	line-height: 30px;
+    background: url(img/prism.png);
+}
+
+nav ul {	
+    display: flex;
+   
+}
+  /*:not(:last-of-type) */
+nav ul li{
+	margin-right: 15px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+nav ul li a {
+	font-size: 18px;
+    color: #FFF; 
+    display: flex;
+    align-items: center;
+}
+nav ul li a:hover {
+    
+	font-size: 18px;
+    color:cornsilk;
+}
+
+nav ul li a img {
+	height:50px;
+	max-width: 100%;
+    display:flex; 
+    margin-right: 3px;
+}
+
+/** КОНТЕНТ      **/
+
+.main {
+	background-color: antiquewhite;
+	line-height: 40px;
+	border: 1px solid black;
+    background: url(img/main.png);
+}
+
+/** ВКЛАДКИ **/
+
+.about-me,
+.prof-exp,
+.prof-skills,
+.contacts {
+    margin-top: 20px;
+	width: 600px;
+	padding: 20px;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 20px;
+    
+}
+
+/** BUTTON FOOTER **/
+
+article 
+{
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+article h2
+{
+	font-size: 20px;
+	margin-bottom: 18px;
+}
+
+/** ASIDE **/
+aside 
+{
+    margin-top: 20px;
+	float: right;
+	border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+	width: 160px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 18px 18px;
+	margin-left: 56px;
+}
+
+aside ul li 
+{
+	font-size: 13px;
+}
+
+.aside ul li a
+{
+	color: #000;
+	font-size: 18px;
+}
+
+aside a:hover {
+	text-decoration:underline;
+    color: #000;
+}
+
+.button {
+	font-weight: 700;
+	text-decoration: none;
+	color: black;
+	text-transform: full-width;
+	letter-spacing: 1.6px;
+	display: flex;
+    justify-content: center;
+	border: 2px solid black;
+	border-radius: 50px;
+	padding: 2px 30px;
+	margin-bottom: 13px;
+	transition: 0.2s ease-out;
+    width: 40px;
+    color: black;
+	background-color:floralwhite;
+}
+
+.button:hover {
+	color: yellow;
+	background-color: white;
+}
+
+/** FOOTER **/
+
+.foot {
+	border: 1px solid black;
+    padding: 20px;
+    height: 40px;
+    background-color:floralwhite;
+}
+.foot p{
+    padding: 10px;
+
+}
