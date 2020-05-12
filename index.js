@@ -1,18 +1,19 @@
-/*const myButton = document.getElementById('contacts-btn');
 
-const myButtonListener = () => {
+var list = document.getElementById('button-top');
+var aelement    = document.createElement('a');
+aelement.className = 'button';
+aelement.href = '#top';
+aelement.title = 'к навигации';
+aelement.id = "jstext";
+aelement.appendChild(document.createTextNode('Вверх'));
+list.appendChild(aelement);
 
-  let div = document.createElement('div');
-  div.innerHTML = "какой-то текст";
+const myButtonClick = document.getElementById('jstext');
+let AddNewElementWithText = () => {
+    const newElement = document.createElement('div');
+    newElement.innerText = 'How did i do this?';
+    newElement.style = 'font-size: 30px; color: red';
+    list.appendChild(newElement);
+}
+myButtonClick.addEventListener('click', AddNewElementWithText);
 
-  document.body.appendChild(div);
-
-};
-
-myButton.addEventListener('click', myButtonListener);*/
-var list = document.getElementById('kek'),
-  newdiv = document.createElement('div');
-    newdiv.className = 'button';
-	newdiv.style.color = 'black';
-    newdiv.innerHTML = "Вверх";
-list.appendChild(newdiv);
