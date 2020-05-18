@@ -1,7 +1,7 @@
 
 var list = document.getElementById('button-top');
 var aelement    = document.createElement('a');
-aelement.className = 'button';
+aelement.className = 'btn waves-effect waves-purple';
 aelement.href = '#top';
 aelement.title = 'к навигации';
 aelement.id = "jstext";
@@ -16,4 +16,5 @@ let AddNewElementWithText = () => {
     list.appendChild(newElement);
 }
 myButtonClick.addEventListener('click', AddNewElementWithText);
+
 

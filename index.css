@@ -1,83 +1,66 @@
-* {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: normal;
-}
-
-/** отцентрирование **/
-
-.container {
-	margin: 0 auto;
-	width: 900px;
-}
-
-/** ПАРТФОЛИО **/
-
-.head-partfolio__title
+.container
 {
-color:black;
+	margin: 0 auto;
+	width: 900px;  
 }
 
-.head-partfolio {
-	padding: 20px;
+/* HEADER */
+
+.head-partfolio
+{
+   padding: 10px;
 	border: 1px solid black;
 	background-color: antiquewhite;
-	font-size: 18px;
 	line-height: 40px;
     color: #FFF;
     background: url(img/head.png);
-    
+   
 }
 
-/** НАВИГАЦИЯ **/
+.head-partfolio_title
+{
+  color:black;
+   margin-top: 0px;
+  margin-bottom: 10px;
+ 	font-size: 48px;
+}
 
-.nav-header {
+/* NAVIGATION */
+
+.nav-wrapper {
 	
 	background-color: azure;
 	text-decoration-color: black;
-	line-height: 30px;
+	line-height: 50px;
     background: url(img/prism.png);
+   display: flex;
 }
+ 
 
-.nav-header__ul {	
-    display: flex;
-   
-}
-  /*:not(:last-of-type) */
-.nav-header ul li{
-	margin-right: 15px;
-    border: 1px solid black;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+ /*:not(:last-of-type) */
+.nav-wrapper_title{
+	margin-right: 67px;
+   /* border: 1px solid black;*/
+  /*box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);*/
     border-radius: 20px;
-    padding: 5px;
+    padding: 7px;
 }
 
-.nav-header ul li a {
+.nav-wrapper_title {
 	font-size: 18px;
-    color: #FFF; 
+    color: white; 
     display: flex;
     align-items: center;
 }
-.nav-header ul li a:hover {
+.nav-wrapper_title:hover {
     
 	font-size: 18px;
     color:cornsilk;
 }
 
-.nav-header ul li a img {
-	height:50px;
+.nav-wrapper_title img {
+	height:20px;
 	max-width: 100%;
-    display:flex; 
     margin-right: 3px;
 }
 
@@ -85,14 +68,15 @@ color:black;
 
 /**       КОНТЕНТ      **/
 
+
 .main-content {
-	background-color: antiquewhite;
+	
 	line-height: 40px;
 	border: 1px solid black;
     background: url(img/main.png);
 }
 
-/**       ВКЛАДКИ **/
+/**       ВКЛАДКА ABOUT  **/
 
 .about-me
 {  
@@ -105,7 +89,6 @@ color:black;
 	display: inline-block;
 	vertical-align: top;
 	margin-bottom: 20px;
-    position: 
 }
 
 .title 
@@ -115,8 +98,27 @@ color:black;
   text-align: center;
   margin-bottom: 18px;
 }
- 
-/** ASIDE **/
+
+.myself_foto img 
+
+{
+margin-top: 30px;
+  margin-left: 5px;
+  width: 80px;
+  height: 70px;
+}
+
+/* MAIN PROF SKILLS */
+
+
+/* ASIDE */
+
+.main-content {
+	background-color: antiquewhite;
+	line-height: 40px;
+	border: 1px solid black;
+    background: url(img/main.png);
+}
 
 .asidenav 
 {
@@ -129,7 +131,7 @@ color:black;
 	display: inline-block;
 	vertical-align: top;
 	padding: 18px 18px;
-	margin-left: 756px;
+	margin-left: 738px;
   position:fixed;
 }
 
@@ -150,9 +152,6 @@ color:black;
 }
 
 /** BUTTON FOOTER **/
-
-
-
 
 .button {
 	font-weight: 700;
@@ -176,13 +175,43 @@ color:black;
 	color: yellow;
 	background-color: white;
 }
-
+.btn
+{
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  padding: 7px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.btn:hover {
+	color: white;
+	background-color: black;
+}
 /** FOOTER **/
 
+.page-footer
+{
+  
+  background-color: #313131;
+}
+
+.page-footer ul  
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.grey-text
+{
+   font-size: 13px;
+}
+
 .foot-content {
+  display: flex;
 	border: 1px solid black;
     padding: 20px;
-    height: 40px;
     background-color:floralwhite;
 }
 .foot-content p{
